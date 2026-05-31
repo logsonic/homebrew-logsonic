@@ -5,21 +5,21 @@
 class Logsonic < Formula
   desc "Desktop-first log analytics with full-text search and Grok parsing"
   homepage "https://github.com/logsonic/logsonic"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/logsonic/logsonic/releases/download/v1.1.0/logsonic_1.1.0_darwin_amd64.tar.gz"
-      sha256 "4c24d3243b5e6d2b21072c97d293c50c1f0852ed3abb491d9a5f9ceb844df31e"
+      url "https://github.com/logsonic/logsonic/releases/download/v1.1.1/logsonic_1.1.1_darwin_amd64.tar.gz"
+      sha256 "ff646fb3ad7860c139d05fffc108414aa710a9ddf7d5e35d864a76a9380fb022"
 
       def install
         bin.install "logsonic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/logsonic/logsonic/releases/download/v1.1.0/logsonic_1.1.0_darwin_arm64.tar.gz"
-      sha256 "e580804eb4f6d61523e1e55f18c5870d9bb0fcaa1ee7ec6bf175100cf7865aee"
+      url "https://github.com/logsonic/logsonic/releases/download/v1.1.1/logsonic_1.1.1_darwin_arm64.tar.gz"
+      sha256 "f9a591153a8755e25cb24a2c1f32ce9b4103cf5c669ec9843babf88445023d5f"
 
       def install
         bin.install "logsonic"
@@ -29,15 +29,15 @@ class Logsonic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logsonic/logsonic/releases/download/v1.1.0/logsonic_1.1.0_linux_amd64.tar.gz"
-      sha256 "e34fc022a5d05a4fa17c888247134931e19d7f5c08b710b74a405ede82131bc0"
+      url "https://github.com/logsonic/logsonic/releases/download/v1.1.1/logsonic_1.1.1_linux_amd64.tar.gz"
+      sha256 "9a40dd35cc8d431a0705c4f6068ad978fb29631d8956de10746bb45dbe054f4e"
       def install
         bin.install "logsonic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logsonic/logsonic/releases/download/v1.1.0/logsonic_1.1.0_linux_arm64.tar.gz"
-      sha256 "a45a62cb43a8d970f6f41d62f297195cf207eff311c796af45a926d20ac0189a"
+      url "https://github.com/logsonic/logsonic/releases/download/v1.1.1/logsonic_1.1.1_linux_arm64.tar.gz"
+      sha256 "febec96875760256866034608bc4e7506ef5c05df47813531bc739bbced9b829"
       def install
         bin.install "logsonic"
       end
