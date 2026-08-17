@@ -1,6 +1,6 @@
 cask "logsonic" do
-  version "1.4.2"
-  sha256 "71514b2db4534d5d7cce57846554de516a17a3a3feb45bde03213b2f601581e8"
+  version "1.4.3"
+  sha256 "286764ca3ab8d547e352da015e2328800bc736be8b4232777a41342c946212ce"
 
   url "https://github.com/logsonic/logsonic/releases/download/v#{version}/logsonic_#{version}_macos.zip"
   name "LogSonic"
